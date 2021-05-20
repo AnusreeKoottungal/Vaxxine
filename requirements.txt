@@ -1,4 +1,2 @@
 requests~=2.25.1
-telebot~=0.0.4
 Telethon~=1.21.1
-APScheduler~=3.7.0
