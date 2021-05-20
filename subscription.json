@@ -1,0 +1,13 @@
+{
+  "ERNAKULAM": [
+    {"user_id": "@johnsabujohn", "age_limit": 18},
+    {"user_id": "@johnsabujohn", "age_limit": 45}
+  ],
+  "MALAPPURAM": [
+    {"user_id": "@johnsabujohn", "age_limit": 18},
+    {"user_id": "@johnsabujohn", "age_limit": 45}
+  ],
+  "TRIVANDRUM": [
+    {"user_id": "@johnsabujohn", "age_limit": 18}
+  ]
+}
