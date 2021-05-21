@@ -1,8 +1,13 @@
 # importing all required libraries
+import json
+import time
+
 from telethon import TelegramClient, sync, events
 from telethon import utils
 # get your api_id, api_hash, token
 # from telegram as described above
+from utils import print_with_date
+
 api_id = '5367299'
 api_hash = '8ff2358ef3c20de3bca2bf5ffbcb9dfd'
 token = '1732626920:AAH9ar3USEHyHsVApvx4f5NJnx8QFJdfqoo'
@@ -25,9 +30,17 @@ def get_client():
     if not client.is_user_authorized():
         client.send_code_request(phone)
 
-        # signing in the client
-        client.sign_in(phone, input('Enter the code: '))
-    print('Telegram connected successfully')
+        while True:
+            with open('password.json') as f:
+                data = json.load(f)
+                if data.get('otp', None):
+                    client.sign_in(phone, data.get('otp'))
+                    print_with_date('client login successful')
+                    break
+                else:
+                    print_with_date('Waiting for client otp')
+                    time.sleep(10)
+    print_with_date('Telegram connected successfully')
     return client
 
 
@@ -44,7 +57,7 @@ def send_message(user_id, client, message):
 
         # there may be many error coming in while like peer
         # error, wwrong access_hash, flood_error, etc
-        print(e)
+        print_with_date(e)
 
 # disconnecting the telegram session
 # client.disconnect()

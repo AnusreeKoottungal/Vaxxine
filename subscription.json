@@ -1,13 +1,20 @@
 {
   "ERNAKULAM": [
     {"user_id": "@johnsabujohn", "age_limit": 18},
-    {"user_id": "@johnsabujohn", "age_limit": 45}
+    {"user_id": "@mariasabujohn", "age_limit": 18},
+    {"user_id": "@johnsabujohn", "age_limit": 45},
+    {"user_id": "@anusreekoottungal1", "age_limit": 45},
+    {"user_id": "@anusreekoottungal1", "age_limit": 18}
   ],
   "MALAPPURAM": [
     {"user_id": "@johnsabujohn", "age_limit": 18},
-    {"user_id": "@johnsabujohn", "age_limit": 45}
+    {"user_id": "@johnsabujohn", "age_limit": 45},
+    {"user_id": "@anusreekoottungal1", "age_limit": 45},
+    {"user_id": "@anusreekoottungal1", "age_limit": 18}
   ],
   "TRIVANDRUM": [
-    {"user_id": "@johnsabujohn", "age_limit": 18}
+   {"user_id": "@johnsabujohn", "age_limit": 18},
+    {"user_id": "@anusreekoottungal1", "age_limit": 18},
+    {"user_id": "@abhijay_k", "age_limit": 18}
   ]
 }
