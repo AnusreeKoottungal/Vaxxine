@@ -48,3 +48,4 @@ def send_message(user_id, client, message):
 
 # disconnecting the telegram session
 # client.disconnect()
+# end
